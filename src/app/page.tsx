@@ -4,7 +4,6 @@ export default async function Home() {
 
   const count = await prisma.user.count()
   if(count === 0){
-    console.log("No users yet")
   }
   
 
